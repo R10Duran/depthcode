@@ -1,10 +1,9 @@
 import logoImg from '../../assets/logo-branco.png';
-import { Container, Content } from './styles';
+import { Container } from './styles';
 
 export function Header() {
     return (
         <Container>
-            <Content>
                 <img src={logoImg} alt="depthCode" />
                 <ul>
                     <li>
@@ -24,7 +23,6 @@ export function Header() {
                     <a href="#">Bag</a>
                     <a href="#">Next</a>
                 </div>
-            </Content>
         </Container>
     )
 }

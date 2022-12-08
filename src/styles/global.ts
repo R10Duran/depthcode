@@ -3,11 +3,13 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 :root {
     --background: #333;
-    --background2: #292636;
+    --background2: #333;
     --fontColor: #F0F2F5;
     --red: #E52E4D;
     --green: #33CC95;
     --blue: #5429CC;
+
+    --transparentBlack: rgba(255,255,255,0.8);
 
     --blue-light: #6933FF;
 
@@ -38,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--background);
         -webkit-font-smoothing: antialiased;
         color: var(--fontColor);
+        font-family: 'Roboto';
     }
 
     body, input, textarea, button {
@@ -51,6 +54,9 @@ export const GlobalStyle = createGlobalStyle`
 
     button {
         cursor: pointer;
+    }
+    p {
+        font-size: 1rem;
     }
 
     [disabled] {

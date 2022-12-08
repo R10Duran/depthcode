@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.header `
-    background: var(--background2);
-    padding: 2rem 1rem 2rem;
+    background: var(--red);
+    padding: 1rem 2rem;
 
     position: sticky;
     top: 0;
@@ -12,6 +12,12 @@ export const Container = styled.header `
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    .logo{
+        font-size: 1.6rem;
+        font-weight: 900;
+        cursor: pointer;
+    }
 
     ul{
         display: flex;
@@ -20,14 +26,17 @@ export const Container = styled.header `
             list-style: none;
             cursor: pointer;
             transition: all 0.2s;
+            font-weight: 700;
             &:hover{
-                color: var(--red);
+                color: var(--background2);
                 /* border-bottom: 1px solid var(--red); */
             }
         }
     }
 
-    a{
-        text-decoration: none;
+    .social{
+        a{
+            margin: 0 1rem;
+        }
     }
 `;

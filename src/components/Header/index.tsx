@@ -1,10 +1,13 @@
-import logoImg from '../../assets/logo-branco.png';
+import iconInsta from '../../assets/icons/icon-instagram.svg';
+import iconWhats from '../../assets/icons/icon-whatsapp.svg';
+import iconLink from '../../assets/icons/icon-linkedin.svg';
 import { Container } from './styles';
 
 export function Header() {
     return (
         <Container>
-                <img src={logoImg} alt="depthCode" />
+                {/* <img src={logoImg} alt="depthCode" /> */}
+                <span className='logo'>&lt;DepthCode&frasl;&gt; </span>
                 <ul>
                     <li>
                         About
@@ -19,9 +22,10 @@ export function Header() {
                         Contacts
                     </li>
                 </ul>
-                <div>
-                    <a href="#">Bag</a>
-                    <a href="#">Next</a>
+                <div className='social'>
+                    <a href="#" className='instagram'><img src={iconInsta} alt="Intagram" /></a>
+                    <a href="#" className='whatsapp'><img src={iconWhats} alt="Whatsapp" /></a>
+                    <a href="#"><img src={iconLink} alt="Linkedin" /></a>
                 </div>
         </Container>
     )

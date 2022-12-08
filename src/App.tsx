@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
+import { ProjectMains } from "./components/ProjectMains";
 import { GlobalStyle } from "./styles/global";
 
 export function App() {
@@ -7,6 +8,7 @@ export function App() {
     <>
         <Header />
         <Home />
+        <ProjectMains/>
         <GlobalStyle/>
     </>
   );

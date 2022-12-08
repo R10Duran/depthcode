@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.header `
     background: var(--background2);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 `;
 

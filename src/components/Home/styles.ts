@@ -10,4 +10,7 @@ export const Content = styled.div`
     padding: 2rem 1rem 2rem;
 
     color: #fff;
+    h1{
+        font-size: 3rem;
+    }
 `

@@ -10,4 +10,11 @@ export const Content = styled.div`
     padding: 2rem 1rem 2rem;
 
     color: #fff;
+
+    button{
+        padding: 2rem
+        background-color: #000;
+        border: none;
+        color: #fff;
+    }
 `
